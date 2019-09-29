@@ -1,0 +1,8 @@
+
+       
+        <mat-tab-group #a (click)="mc()">
+          <mat-tab *ngFor="let product of products" [label]="product.title">
+            {{product.content}}
+          </mat-tab>
+        </mat-tab-group>
+      
