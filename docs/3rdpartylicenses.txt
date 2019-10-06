@@ -86,8 +86,6 @@ THE SOFTWARE.
 
 @angular/material/grid-list
 
-@angular/material/icon
-
 @angular/material/tabs
 
 @angular/platform-browser
