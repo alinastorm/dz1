@@ -3,13 +3,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import {MatTabsModule} from '@angular/material/tabs';
-import { Card1Component } from './dashboard/card1/card1.component';
-import { Card2Component } from './dashboard/card2/card2.component';
-import { Card3Component } from './dashboard/card3/card3.component';
+import { Card1Component } from './dashboard/card1-tabs-maincontent/card1.component';
+import { Card2Component } from './dashboard/card2-img/card2.component';
+import { Card3Component } from './dashboard/card3-content/card3.component';
+import { MaterialModule } from './shared/material/material.module';
 
 @NgModule({
   declarations: [
@@ -22,10 +19,7 @@ import { Card3Component } from './dashboard/card3/card3.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatGridListModule,
-    MatCardModule,
-    MatIconModule,
-    MatTabsModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

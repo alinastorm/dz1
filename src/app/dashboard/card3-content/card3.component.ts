@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Iproducts, products } from '../assets/products';
+import { Iproducts, products } from '../../mock/products';
 
 
 @Component({
@@ -10,11 +10,12 @@ import { Iproducts, products } from '../assets/products';
 export class Card3Component implements OnInit {
   public products: Iproducts[] = products;
   @Input()
- public mtgi: number;
+ public selectedtab: number;
   constructor() { }
 
   ngOnInit() {
-    this.mtgi = 0;
-    // console.log(products[0]);
+
+    this.selectedtab = 0;
+
   }
 }

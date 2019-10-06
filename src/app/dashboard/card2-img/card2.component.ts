@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MatTabGroup } from '@angular/material/tabs';
+
 
 @Component({
   selector: 'app-card2',
@@ -8,11 +8,11 @@ import { MatTabGroup } from '@angular/material/tabs';
 })
 export class Card2Component implements OnInit {
  @Input()
- public mtgi: number;
+ public selectedtab: number;
   constructor() { }
 
   ngOnInit() {
-    this.mtgi = 0;
+    this.selectedtab = 0;
   }
 
 }

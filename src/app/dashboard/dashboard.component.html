@@ -1,6 +1,6 @@
 <div class="grid-container">
-  <h1 class="mat-h1">App <mat-icon class="mat-18">sentiment_very_satisfied</mat-icon>
-  </h1>
+  <h1 class="mat-h1">{{title}}</h1>
+
   <mat-grid-list cols="2" rowHeight="150px">
     <!--  -->
     <mat-grid-tile colspan="1" rowspan="4">
@@ -12,7 +12,7 @@
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
 
-          <app-card1 (tabtoogle)="setMTG($event)"></app-card1>
+          <app-card1 (tabtoogle)="tabSelect($event)"></app-card1>
 
         </mat-card-content>
       </mat-card>
@@ -25,26 +25,26 @@
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
-            
-          <app-card2 [mtgi]="mtgi"></app-card2>
-
+       
+            <app-card2 [selectedtab]="selectedtab"></app-card2>
+        
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
     <!--  -->
     <mat-grid-tile colspan="1" rowspan="2">
-      <mat-card class="dashboard-card c3" >
+      <mat-card class="dashboard-card c3">
         <mat-card-header>
           <mat-card-title>
           </mat-card-title>
         </mat-card-header>
         <mat-card-content class="dashboard-card-content">
 
-          <app-card3 [mtgi]="mtgi"></app-card3>
+          <app-card3 [selectedtab]="selectedtab"></app-card3>
 
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>
-<!--  -->
+    <!--  -->
   </mat-grid-list>
 </div>
